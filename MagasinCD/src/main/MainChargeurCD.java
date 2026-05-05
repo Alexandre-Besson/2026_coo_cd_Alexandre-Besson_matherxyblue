@@ -19,10 +19,11 @@ public class MainChargeurCD {
 	 *             si fichier inexistant
 	 */
 	public static void main(String args[]) throws IOException {
-		String nomFichier = "musicbrainz/0117b967-d066-4ce1-bf7f-f2b34c063ed3.xml";
-		ChargeurCD charge = new ChargeurCD(nomFichier);
-		CD c = charge.chargerCD();
-		System.out.println(c);
+		//String nomFichier = "musicbrainz/0117b967-d066-4ce1-bf7f-f2b34c063ed3.xml";
+		//ChargeurCD charge = new ChargeurCD(nomFichier);
+		//CD c = charge.chargerCD();
+		//System.out.println(c);
+		System.out.println("ajdghjd".compareTo("dgdgdgx"));
 	}
 
 }
