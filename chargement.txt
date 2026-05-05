@@ -1,0 +1,10 @@
+main -> créer un ChargeurMagasin chargeur
+	chargeur.chargerMagasin()-> créer un Magasin magasin
+				    créer un ChargeurCD chargeCd1
+				    chargeCd1.chargerCD() -> créer un CD cd1
+							     this.extrairePIste()
+							     cd1.ajouterPiste()
+							     this.extrairePIste()
+							     cd1.ajouterPiste()
+				   magasin.ajouteCd(cd1)
+fin
