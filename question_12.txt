@@ -1,0 +1,3 @@
+question 12 (reflexion) : les méthodes de tri dépendent directement des attributs de CD, 
+ce qui rend le code moins flexible et ajouter un nouveau critère de tri oblige à modifier le code existant 
+au lieu d’ajouter simplement une nouvelle classe ou stratégie.
