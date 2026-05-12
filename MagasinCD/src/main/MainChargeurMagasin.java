@@ -38,6 +38,9 @@ public class MainChargeurMagasin {
 		resultat.trier(new ComparateurAlbum());
 		System.out.println(resultat);
 
+		resultat.trier(new ComparateurPiste());
+		System.out.println(resultat);
+
 	}
 
 }
