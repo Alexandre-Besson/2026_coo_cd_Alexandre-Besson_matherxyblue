@@ -1,6 +1,7 @@
 package donnees;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 /**
  * La classe Magasin represente un magasin qui vend des CDs.</p>
@@ -68,7 +69,7 @@ public class Magasin {
 		return(res);
 	}
 
-	public void trierAlbum(){
+	public void trier(ComparateurCd comparateur){
 		ArrayList<CD> nl=new ArrayList();
 		int siz =this.getNombreCds();
 		for(int i=0;i<siz;i++){
@@ -76,26 +77,7 @@ public class Magasin {
 			int siz2=this.getNombreCds();
 			CD max=this.getCd(0);
 			for(int j=0;j<siz2;j++){
-				if(max.getNomCD().compareTo(this.getCd(j).getNomCD())>0){
-					max=this.getCd(j);
-					place=j;
-				}
-			}
-			nl.add(max);
-			this.listeCds.remove(place);
-		}
-		this.listeCds=nl;
-	}
-
-	public void trierArtiste(){
-		ArrayList<CD> nl=new ArrayList();
-		int siz =this.getNombreCds();
-		for(int i=0;i<siz;i++){
-			int place=0;
-			int siz2=this.getNombreCds();
-			CD max=this.getCd(0);
-			for(int j=0;j<siz2;j++){
-				if(max.getNomArtiste().compareTo(this.getCd(j).getNomArtiste())>0){
+				if(comparateur.etreAvant(this.getCd(j),max)){
 					max=this.getCd(j);
 					place=j;
 				}
