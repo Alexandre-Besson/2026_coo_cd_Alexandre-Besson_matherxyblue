@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import donnees.ComparateurAlbum;
+import donnees.ComparateurPiste;
 import donnees.ComprateurArtiste;
 import donnees.Magasin;
 import XML.ChargeurMagasin;
