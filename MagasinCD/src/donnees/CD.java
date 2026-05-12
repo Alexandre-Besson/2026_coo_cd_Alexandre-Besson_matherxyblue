@@ -104,4 +104,8 @@ public class CD {
 	public String getNomArtiste() {
 		return nomArtiste;
 	}
+
+	public int getNbPistes(){
+		return pistes.size();
+	}
 }
