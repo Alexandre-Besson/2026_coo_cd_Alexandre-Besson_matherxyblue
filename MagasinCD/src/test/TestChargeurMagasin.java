@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestChargeurMagasin {
 
 
+    @org.junit.Test
     @Test
     public void test() throws FileNotFoundException {
         ChargeurMagasin chargeurMagasin = new ChargeurMagasin("../MagasinCD/musicbrainzSimple/");
